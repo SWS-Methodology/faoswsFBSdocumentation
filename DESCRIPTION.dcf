@@ -1,0 +1,24 @@
+Package: faoswsDocumentation
+Type: Package
+Title: Package containing documentation on FBS
+Version: 0.1-0
+Date: 2018-09-13
+Authors@R: person("Cristina", "Muschitiello",
+        role = "aut", email = "cristina.muschitiello@fao.org"))
+Description: The package does not contain functions, 
+but documentation to be shared and updated from different hands that, therefore, needs versioning.
+License: FAO
+LazyData: yes
+Depends: R (>= 2.10)
+Imports: faosws (>= 0.3.2), faoswsUtil (>= 0.2.0), data.table, diagram,
+        faoswsBalancing, igraph, dplyr, lattice, MASS, reshape2
+Suggests: knitr, ggplot2, testthat
+swsDatasetDepends: agriculture:aproduction, trade:total_trade_CPC,
+        tourism:tourismprod, suafbs:sua, faostat_one:FS1_SUA,
+        faostat_one:aupus_share_fs, faostat_one:input_from_proc_fs,
+        SWS_R_SHARE/browning/elementCodes.csv
+swsModuleDepends: faoswsProduction, faoswsTrade, faoswsStock,
+        faoswsFood,faoswsUtils, faoswsFeed, faoswsSeed, faoswsTourist,
+        faoswsLoss, faoswsIndustrial,sendMailR
+ZipData: no
+RoxygenNote: 5.0.1
